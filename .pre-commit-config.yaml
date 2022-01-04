@@ -24,6 +24,7 @@ repos:
     hooks:
       -  id: python-check-blanket-noqa
       -  id: python-check-blanket-type-ignore
+      -  id: python-use-type-annotations
   - repo: local
     hooks:
       - id: flake8
