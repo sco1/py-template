@@ -47,6 +47,7 @@ known_first_party = "src,tests"
 no_lines_before = "LOCALFOLDER"
 order_by_type = false
 profile = "black"
+line_length = 100
 
 [tool.mypy]
 disallow_incomplete_defs = true
