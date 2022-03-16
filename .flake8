@@ -17,6 +17,9 @@ extend-ignore=
     ANN002,ANN003,ANN101,ANN102,ANN204,ANN206,
     # pep8-naming
     N802,N806,N815,
+extend-select=
+    # Type Guards
+    TC1
 exclude=
     __pycache__,.cache,
     venv,.venv,
