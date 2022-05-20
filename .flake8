@@ -2,7 +2,7 @@
 max-line-length=100
 docstring-convention=all
 import-order-style=pycharm
-application-import-names=src,tests
+application-import-names=py_template,tests
 extend-ignore=
     P102,B311,W503,E203,E226,S311,
     # Missing Docstrings
@@ -20,8 +20,7 @@ extend-ignore=
 extend-select=
     # Type Guards
     TC1
-exclude=
-    __pycache__,.cache,
-    venv,.venv,
+extend-exclude=
+    .venv,
 per-file-ignores =
     tests/test_*.py:D103 E501,

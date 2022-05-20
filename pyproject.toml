@@ -31,11 +31,11 @@ flake8-type-checking = {version="^1.5", python="<4.0"}
 isort = "^5.10"
 mypy = "^0.950"
 pep8-naming = "^0.12"
-pre-commit = "^2.18"
+pre-commit = "^2.19"
 pytest = "^7.1"
 pytest-check = "^1.0"
 pytest-cov = "^3.0"
-pytest-randomly = "^3.11"
+pytest-randomly = "^3.12"
 tox = "^3.25"
 
 [tool.black]
@@ -43,7 +43,7 @@ line-length = 100
 
 [tool.isort]
 case_sensitive = true
-known_first_party = "src,tests"
+known_first_party = "py-template,tests"
 no_lines_before = "LOCALFOLDER"
 order_by_type = false
 profile = "black"
