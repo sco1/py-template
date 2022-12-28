@@ -37,7 +37,7 @@ pytest = "^7.2"
 pytest-check = "^1.0"
 pytest-cov = "^4.0"
 pytest-randomly = "^3.12"
-tox = "^3.27"
+tox = "^4.0"
 
 [tool.black]
 line-length = 100
