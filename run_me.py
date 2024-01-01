@@ -17,6 +17,7 @@ SWAPS = (
     TemplateSwap(src=Path("./pyproject.toml"), needs_hyphen=True, has_description=True),
     TemplateSwap(src=Path("./README.md"), needs_hyphen=True, has_description=True),
     TemplateSwap(src=Path("./tox.ini")),
+    TemplateSwap(src=Path("./.github/workflows/pypi_release.yml")),
 )
 
 
