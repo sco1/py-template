@@ -1,7 +1,5 @@
 FROM ubuntu:focal
 ARG PYTHON_PACKAGES="\
-python3.8 python3.8-distutils python3.8-venv python3.8-tk \
-python3.9 python3.9-distutils python3.9-venv python3.9-tk \
 python3.10 python3.10-distutils python3.10-venv python3.10-tk \
 python3.11 python3.11-distutils python3.11-venv python3.11-tk \
 python3.12 python3.12-distutils python3.12-venv python3.12-tk \
@@ -9,17 +7,16 @@ python3.12 python3.12-distutils python3.12-venv python3.12-tk \
 
 # Base utils
 RUN apt-get update && apt-get install --no-install-recommends -yq software-properties-common
-RUN apt-get -yq install git
+RUN apt-get -yq install git curl
 
 # Python versions
 RUN add-apt-repository ppa:deadsnakes/ppa && apt-get update
 RUN apt-get install -yq --no-install-recommends ${PYTHON_PACKAGES}
 
-# Fish shell
-RUN apt-add-repository ppa:fish-shell/release-3 && apt update
-RUN apt-get -yq install fish
+# Shell
+RUN apt-get -yq install zsh
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-SHELL ["fish", "--command"]
-RUN chsh -s /usr/bin/fish
-ENV SHELL /usr/bin/fish
-ENTRYPOINT ["fish"]
+RUN chsh -s /usr/bin/zsh
+ENV SHELL /usr/bin/zsh
+ENTRYPOINT ["zsh"]
