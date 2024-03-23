@@ -35,10 +35,10 @@ repos:
       -  id: python-check-blanket-type-ignore
       -  id: python-use-type-annotations
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.3.3
+    rev: v0.3.4
     hooks:
       - id: ruff
   - repo: https://github.com/fpgmaas/deptry.git
-    rev: 0.14.0
+    rev: 0.14.1
     hooks:
       - id: deptry
