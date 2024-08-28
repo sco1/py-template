@@ -52,5 +52,13 @@ ignore = [
 
 [lint.per-file-ignores]
 "tests/test_*.py" = [
+    "D101",
     "D103",
+]
+
+[lint.flake8-bugbear]
+extend-immutable-calls = [
+    # Typer CLI
+    "typer.Option",
+    "typer.Argument",
 ]
