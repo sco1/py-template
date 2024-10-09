@@ -17,7 +17,10 @@ SWAPS = (
     TemplateSwap(src=Path("./pyproject.toml"), needs_hyphen=True, has_description=True),
     TemplateSwap(src=Path("./README.md"), needs_hyphen=True, has_description=True),
     TemplateSwap(src=Path("./tox.ini")),
+
+    # Release YAML has a hyphenated name (PyPI URL) and underscore name (build artifact)
     TemplateSwap(src=Path("./.github/workflows/pypi_release.yml")),
+    TemplateSwap(src=Path("./.github/workflows/pypi_release.yml"), needs_hyphen=True),
 )
 
 
