@@ -35,10 +35,10 @@ Changelog = "https://github.com/sco1/py-template/blob/main/CHANGELOG.md"
 
 [tool.uv]
 dev-dependencies = [
-    "black~=24.10",
+    "black~=25.0",
     "flake8~=7.1",
     "flake8-annotations~=3.1",
-    "isort~=5.13",
+    "isort~=6.0",
     "mypy~=1.14",
     "pre-commit~=4.0",
     "pytest~=8.3",
