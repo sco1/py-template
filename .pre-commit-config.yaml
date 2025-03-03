@@ -1,5 +1,5 @@
 ci:
-  autoupdate_schedule: monthly
+  autoupdate_schedule: quarterly
 
 repos:
   - repo: https://github.com/psf/black
@@ -7,7 +7,7 @@ repos:
     hooks:
       - id: black
   - repo: https://github.com/pycqa/isort
-    rev: 6.0.0
+    rev: 6.0.1
     hooks:
       - id: isort
         name: isort
@@ -35,6 +35,6 @@ repos:
       -  id: python-check-blanket-type-ignore
       -  id: python-use-type-annotations
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.9.7
+    rev: v0.9.9
     hooks:
       - id: ruff
