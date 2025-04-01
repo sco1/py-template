@@ -2,10 +2,9 @@
 name = "py-template"
 version = "0.1.0"
 description = "It's a Python project template!"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
-    {name = "sco1", email = "sco1.git@gmail.com"}
-]
-maintainers = [
     {name = "sco1", email = "sco1.git@gmail.com"}
 ]
 
@@ -13,7 +12,6 @@ readme = "README.md"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.11",
@@ -29,7 +27,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/sco1/"
 Documentation = "https://github.com/sco1/py-template/blob/main/README.md"
-Repository = "https://github.com/sco1/py-template"
+Repository = "https://github.com/sco1/py-template.git"
 Issues = "https://github.com/sco1/py-template/issues"
 Changelog = "https://github.com/sco1/py-template/blob/main/CHANGELOG.md"
 
