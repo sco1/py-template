@@ -14,7 +14,9 @@ class TemplateSwap(t.NamedTuple):  # noqa: D101
 
 SWAPS = (
     TemplateSwap(src=Path("./.flake8")),
+    # Pyproject has a hyphenated name (project name) & description
     TemplateSwap(src=Path("./pyproject.toml"), needs_hyphen=True, has_description=True),
+    TemplateSwap(src=Path("./pyproject.toml")),  # uv-build spec needs underscore
     TemplateSwap(src=Path("./README.md"), needs_hyphen=True, has_description=True),
     TemplateSwap(src=Path("./tox.ini")),
     # Release YAML has a hyphenated name (PyPI URL) and underscore name (build artifact)
