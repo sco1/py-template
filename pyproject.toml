@@ -31,8 +31,8 @@ Repository = "https://github.com/sco1/py-template.git"
 Issues = "https://github.com/sco1/py-template/issues"
 Changelog = "https://github.com/sco1/py-template/blob/main/CHANGELOG.md"
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "black~=25.0",
     "flake8~=7.1",
     "flake8-annotations~=3.1",
