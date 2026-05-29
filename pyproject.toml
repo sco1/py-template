@@ -38,14 +38,14 @@ dev = [
     "flake8-annotations~=3.1",
     "flake8-define-class-attributes~=0.2",
     "isort~=8.0",
-    "mypy~=1.14",
+    "mypy~=2.1",
     "pre-commit~=4.0",
     "pytest~=9.0",
     "pytest-check~=2.4",
     "pytest-cov~=7.0",
     "pytest-randomly~=4.0",
     "ruff~=0.9",
-    "rumdl~=0.1.25",
+    "rumdl~=0.2.4",
     "sco1-bumper~=2.0",
     "tox~=4.23",
     "tox-uv~=1.17",
@@ -85,5 +85,5 @@ module-name = "py_template"
 module-root = ""
 
 [build-system]
-requires = ["uv_build>=0.11.2,<0.12"]
+requires = ["uv_build>=0.11.17,<0.12"]
 build-backend = "uv_build"
