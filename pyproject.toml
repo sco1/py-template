@@ -14,14 +14,13 @@ classifiers = [
     "Intended Audience :: Developers",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
     "Programming Language :: Python :: 3.15",
     "Typing :: Typed",
 ]
 
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
 ]
 
@@ -42,11 +41,11 @@ dev = [
     "mypy~=2.1",
     "pre-commit~=4.0",
     "pytest~=9.0",
-    "pytest-check~=2.4",
+    "pytest-check~=3.0",
     "pytest-cov~=7.0",
     "pytest-randomly~=5.0",
     "ruff~=0.16",
-    "rumdl~=0.2.4",
+    "rumdl~=0.3.0",
     "sco1-bumper~=2.0",
     "tox~=4.23",
     "tox-uv~=1.17",
